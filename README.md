@@ -12,6 +12,7 @@ The application will follow a modular architecture using Swift Package Manager (
    - `CoreAPI`: Interfaces with the Signup API.
    - https://github.com/hassanvfx/ios-coreSampleAPI
    - `CoreStorage`: Dedicated to persisting state.
+   - https://github.com/hassanvfx/ios-storage
    - `CoreTypes`: Contains all the structs for business logic.
 
 2. **Middleware Layer**: This layer contains single-purpose components that can link the core layer but also can be composed among them in a horizontal dependency to produce more complex components. These include:
