@@ -29,6 +29,57 @@ In this project, we will mock the AWS integration. In a real-world scenario, it 
 
 *Note: In this project, we won't mock the AWS integration but rather simulate that there is a backend side API for auth.*
 
+## 3D Viewer Implementation with SceneKit and SwiftUI
+
+For the 3D viewer functionality, we will be using SceneKit, a powerful native framework in iOS for rendering 3D graphics. SceneKit allows us to create and manipulate 3D objects with ease. 
+
+### Basic Implementation
+
+The basic implementation of a 3D viewer using SceneKit within SwiftUI involves the following steps:
+
+1. **Create a SceneView**: SceneView is a SwiftUI view that hosts a SceneKit scene. We will create a SceneView and configure it to display our 3D object.
+
+```swift
+import SwiftUI
+import SceneKit
+
+struct SceneView: UIViewRepresentable {
+    let scene: SCNScene
+
+    func makeUIView(context: Context) -> SCNView {
+        let view = SCNView()
+        view.scene = scene
+        view.allowsCameraControl = true
+        return view
+    }
+
+    func updateUIView(_ uiView: SCNView, context: Context) {}
+}
+```
+
+2. **Load the 3D Object**: We will load the 3D object from a local file into an SCNScene object. This object will be passed to our SceneView.
+
+```swift
+let scene = SCNScene(named: "art.scnassets/ship.scn")!
+let sceneView = SceneView(scene: scene)
+```
+
+3. **Display the SceneView**: Finally, we will display the SceneView within our SwiftUI view hierarchy.
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        SceneView(scene: SCNScene(named: "art.scnassets/ship.scn")!)
+    }
+}
+```
+
+This basic implementation allows us to display a 3D object and manipulate it using touch gestures. However, for a more advanced 3D viewer, we may need to add additional features such as lighting, animations, and physics.
+
+## Asset Management
+
+In this simple implementation, the 3D asset is stored locally within the app. However, in a production environment, we may need to download 3D assets from S3 buckets or other cloud storage solutions. Therefore, a more advanced implementation would involve creating a download/caching manager for handling the downloading and caching of 3D assets.
+
 # Implementation
 
 For the implementation, this will serve as the main repository and then we will use the following ios-framework template to encapsulate all the modules:
