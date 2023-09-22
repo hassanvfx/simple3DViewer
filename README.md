@@ -57,19 +57,28 @@ struct SceneView: UIViewRepresentable {
 }
 ```
 
-2. **Load the 3D Object**: We will load the 3D object from a local file into an SCNScene object. This object will be passed to our SceneView.
+2. **Load the 3D Object**: We will load the 3D object from a local USDZ file into an SCNScene object. This object will be passed to our SceneView. We will handle the potential error using a do-catch block.
 
 ```swift
-let scene = SCNScene(named: "art.scnassets/ship.scn")!
-let sceneView = SceneView(scene: scene)
+do {
+    let scene = try SCNScene(url: Bundle.main.url(forResource: "YourModel", withExtension: "usdz")!, options: nil)
+    let sceneView = SceneView(scene: scene)
+} catch {
+    print("Failed to load the 3D model.")
+}
 ```
 
-3. **Display the SceneView**: Finally, we will display the SceneView within our SwiftUI view hierarchy.
+3. **Display the SceneView**: Finally, we will display the SceneView within our SwiftUI view hierarchy. We will handle the potential error using a do-catch block.
 
 ```swift
 struct ContentView: View {
     var body: some View {
-        SceneView(scene: SCNScene(named: "art.scnassets/ship.scn")!)
+        do {
+            let scene = try SCNScene(url: Bundle.main.url(forResource: "YourModel", withExtension: "usdz")!, options: nil)
+            SceneView(scene: scene)
+        } catch {
+            Text("Failed to load the 3D model.")
+        }
     }
 }
 ```
