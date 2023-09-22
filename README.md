@@ -147,7 +147,7 @@ Future Core Componets
 ### Roadmap ###
 
 Current planing updated here:
-https://docs.google.com/document/d/1s1c45RpBmNg0a5p1zXf4IH7AbC71kNjHj1MdBZ-0Acs/edit?usp=sharing
+- TODO
 
 ### Licensing ###
 
