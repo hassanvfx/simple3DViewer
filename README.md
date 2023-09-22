@@ -86,7 +86,7 @@ The application is based on a modularized design with individual SPM modules lin
 We aim for composition pattern in which modules are encapsulated as SPM packages. Use the following template that allows to develop the SPM within a DemoApp environment that enables functional demonstration and unit/UI test cases in pure isolation.
 
 The framework template can be found in here:
-https://github.com/spree3d/ios-framework
+https://github.com/hassanvfx/ios-framework
 
 ## Modules
 
@@ -132,7 +132,7 @@ Future Core Componets
 
 <img width="977" alt="mvvm-c" src="https://user-images.githubusercontent.com/425926/190287169-26eb85cf-2b11-40a6-9c9d-dfa786a059a8.png">
 
-* Modularized SPM based features see: https://github.com/spree3d/ios-framework
+* Modularized SPM based features see: https://github.com/hassanvfx/ios-framework
 * Favoring Static and Test Driven Code over dynamic  code
 * Prefer High order functional style
 * Keep functions atomic and descriptive
