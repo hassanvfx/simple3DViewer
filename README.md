@@ -10,12 +10,15 @@ The application will follow a modular architecture using Swift Package Manager (
 1. **Core Layer**: This layer contains primitive/atomic modules that cannot compose among them and are atomic resources. These include:
    - `CoreUI`: Contains shareable UI components.
    - `CoreAPI`: Interfaces with the Signup API.
+   - https://github.com/hassanvfx/ios-coreSampleAPI
    - `CoreStorage`: Dedicated to persisting state.
    - `CoreTypes`: Contains all the structs for business logic.
 
 2. **Middleware Layer**: This layer contains single-purpose components that can link the core layer but also can be composed among them in a horizontal dependency to produce more complex components. These include:
    - `3D Viewer Module`: Allows users to view and interact with a 3D object.
+   - https://github.com/hassanvfx/ios-sk3dviewer
    - `Login/Signup Module`: Handles user authentication.
+   - https://github.com/hassanvfx/ios-loginKit
    - `Gallery Viewer Component`: Displays a gallery of 3D objects.
 
 3. **Application Layer**: This layer imports the middleware and core modules as needed and presents a navigation and controls an internal application state. It allows for the signup sequence, and then optionally shows a logout state, which forces the signup flow and then once an auth token/userId are obtained those are persisted and used in subsequent calls, as well as to present the main navigation which will allow to navigate to the user scan or the gallery.
@@ -100,7 +103,7 @@ https://github.com/hassanvfx/ios-framework
 |                             |
 |        MiddleWare           |
 |                             |
-| Composable Components       |
+| Composable Libraries        |
 +-----------------------------+
 +-----------------------------+
 |                             |
@@ -115,16 +118,18 @@ MiddleWare
 - [Navigator](https://github.com/hassanvfx/ios-navigator)
 - [Datastorage](https://github.com/hassanvfx/ios-storage)
 - [VideoPlayer (SwiftUI AVPlayer)](https://github.com/hassanvfx/ios-swiftuivideoplayer)
+- [LoginKit](https://github.com/hassanvfx/ios-loginKit)
+- [3D Viewer](https://github.com/hassanvfx/ios-sk3dviewer)
 
 Core
-- TODO
+- [Core API](https://github.com/hassanvfx/ios-coreSampleAPI)
 
 Future Middleware Components 
-- LoginKit
+- Gallery Component
 
 Future Core Componets
+- Core Types
 - AssetManager
-- FactoryCache
 - FileServices
 - PermissionServices
 
