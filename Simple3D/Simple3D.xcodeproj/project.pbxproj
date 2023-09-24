@@ -12,6 +12,19 @@
 		4F052C132AC0012E004B2834 /* ResolverManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F052C122AC0012E004B2834 /* ResolverManifest.swift */; };
 		4F052C172AC00191004B2834 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C162AC00191004B2834 /* Resolver */; };
 		4F052C192AC001A6004B2834 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F052C182AC001A6004B2834 /* RootView.swift */; };
+		4F052C202AC00326004B2834 /* S3D3DViewer in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C1F2AC00326004B2834 /* S3D3DViewer */; };
+		4F052C222AC0034E004B2834 /* User3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F052C212AC0034E004B2834 /* User3DView.swift */; };
+		4F052C252AC00432004B2834 /* S3DCoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C242AC00432004B2834 /* S3DCoreUI */; };
+		4F052C282AC0043E004B2834 /* S3DCoreModels in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C272AC0043E004B2834 /* S3DCoreModels */; };
+		4F052C2B2AC004E7004B2834 /* CoreUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C2A2AC004E7004B2834 /* CoreUIKit */; };
+		4F052C2E2AC00537004B2834 /* model.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4F052C2D2AC00537004B2834 /* model.usdz */; };
+		4F052C302AC005A1004B2834 /* Detail3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F052C2F2AC005A1004B2834 /* Detail3DView.swift */; };
+		4F052C322AC006A0004B2834 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F052C312AC006A0004B2834 /* AppCoordinator.swift */; };
+		4F052C362AC008C1004B2834 /* S3DBaseGallery in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C352AC008C1004B2834 /* S3DBaseGallery */; };
+		4F052C382AC008E2004B2834 /* ShopGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F052C372AC008E2004B2834 /* ShopGallery.swift */; };
+		4F052C3A2AC00D15004B2834 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F052C392AC00D15004B2834 /* MyView.swift */; };
+		4F052C3D2AC00DE9004B2834 /* S3DLoginKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C3C2AC00DE9004B2834 /* S3DLoginKit */; };
+		4F052C402AC00EB5004B2834 /* S3DBaseAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 4F052C3F2AC00EB5004B2834 /* S3DBaseAPI */; };
 		4F2F4FD92ABE517E00D55155 /* Simple3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F4FD82ABE517E00D55155 /* Simple3DApp.swift */; };
 		4F2F4FDD2ABE517F00D55155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F4FDC2ABE517F00D55155 /* Assets.xcassets */; };
 		4F2F4FE02ABE517F00D55155 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F2F4FDF2ABE517F00D55155 /* Preview Assets.xcassets */; };
@@ -41,6 +54,12 @@
 		4F052C102AC00109004B2834 /* NavManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavManifest.swift; sourceTree = "<group>"; };
 		4F052C122AC0012E004B2834 /* ResolverManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverManifest.swift; sourceTree = "<group>"; };
 		4F052C182AC001A6004B2834 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		4F052C212AC0034E004B2834 /* User3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User3DView.swift; sourceTree = "<group>"; };
+		4F052C2D2AC00537004B2834 /* model.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = model.usdz; sourceTree = "<group>"; };
+		4F052C2F2AC005A1004B2834 /* Detail3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail3DView.swift; sourceTree = "<group>"; };
+		4F052C312AC006A0004B2834 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4F052C372AC008E2004B2834 /* ShopGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopGallery.swift; sourceTree = "<group>"; };
+		4F052C392AC00D15004B2834 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		4F2F4FD52ABE517E00D55155 /* Simple3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simple3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F2F4FD82ABE517E00D55155 /* Simple3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple3DApp.swift; sourceTree = "<group>"; };
 		4F2F4FDC2ABE517F00D55155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +76,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F052C202AC00326004B2834 /* S3D3DViewer in Frameworks */,
+				4F052C402AC00EB5004B2834 /* S3DBaseAPI in Frameworks */,
 				4F052C172AC00191004B2834 /* Resolver in Frameworks */,
+				4F052C362AC008C1004B2834 /* S3DBaseGallery in Frameworks */,
+				4F052C252AC00432004B2834 /* S3DCoreUI in Frameworks */,
+				4F052C282AC0043E004B2834 /* S3DCoreModels in Frameworks */,
+				4F052C2B2AC004E7004B2834 /* CoreUIKit in Frameworks */,
+				4F052C3D2AC00DE9004B2834 /* S3DLoginKit in Frameworks */,
 				4F052C0E2AC000DF004B2834 /* NavigatorLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +121,22 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		4F052C2C2AC00528004B2834 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F052C2D2AC00537004B2834 /* model.usdz */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F052C332AC006A6004B2834 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4F052C312AC006A0004B2834 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		4F2F4FCC2ABE517E00D55155 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +160,7 @@
 		4F2F4FD72ABE517E00D55155 /* Simple3D */ = {
 			isa = PBXGroup;
 			children = (
+				4F052C2C2AC00528004B2834 /* Assets */,
 				4F2F50022ABE52C900D55155 /* Application */,
 				4F2F50072ABE52F300D55155 /* Coordinators */,
 				4F2F50062ABE52ED00D55155 /* Services */,
@@ -182,6 +225,10 @@
 			isa = PBXGroup;
 			children = (
 				4F052C182AC001A6004B2834 /* RootView.swift */,
+				4F052C212AC0034E004B2834 /* User3DView.swift */,
+				4F052C2F2AC005A1004B2834 /* Detail3DView.swift */,
+				4F052C372AC008E2004B2834 /* ShopGallery.swift */,
+				4F052C392AC00D15004B2834 /* MyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +243,7 @@
 		4F2F50072ABE52F300D55155 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				4F052C332AC006A6004B2834 /* App */,
 				4F052C142AC00132004B2834 /* DI */,
 				4F052C0F2AC000F4004B2834 /* Navigator */,
 			);
@@ -228,6 +276,13 @@
 			packageProductDependencies = (
 				4F052C0D2AC000DF004B2834 /* NavigatorLib */,
 				4F052C162AC00191004B2834 /* Resolver */,
+				4F052C1F2AC00326004B2834 /* S3D3DViewer */,
+				4F052C242AC00432004B2834 /* S3DCoreUI */,
+				4F052C272AC0043E004B2834 /* S3DCoreModels */,
+				4F052C2A2AC004E7004B2834 /* CoreUIKit */,
+				4F052C352AC008C1004B2834 /* S3DBaseGallery */,
+				4F052C3C2AC00DE9004B2834 /* S3DLoginKit */,
+				4F052C3F2AC00EB5004B2834 /* S3DBaseAPI */,
 			);
 			productName = Simple3D;
 			productReference = 4F2F4FD52ABE517E00D55155 /* Simple3D.app */;
@@ -304,6 +359,13 @@
 			packageReferences = (
 				4F052C0C2AC000DF004B2834 /* XCRemoteSwiftPackageReference "ios-navigator" */,
 				4F052C152AC00191004B2834 /* XCRemoteSwiftPackageReference "Resolver" */,
+				4F052C1E2AC00326004B2834 /* XCRemoteSwiftPackageReference "s3d-3dviewer" */,
+				4F052C232AC00432004B2834 /* XCRemoteSwiftPackageReference "s3d-coreui" */,
+				4F052C262AC0043D004B2834 /* XCRemoteSwiftPackageReference "s3d-coremodels" */,
+				4F052C292AC004E7004B2834 /* XCRemoteSwiftPackageReference "ios-coreui" */,
+				4F052C342AC008C1004B2834 /* XCRemoteSwiftPackageReference "s3d-basegallery" */,
+				4F052C3B2AC00DE9004B2834 /* XCRemoteSwiftPackageReference "s3d-loginkit" */,
+				4F052C3E2AC00EB5004B2834 /* XCRemoteSwiftPackageReference "s3d-baseapi" */,
 			);
 			productRefGroup = 4F2F4FD62ABE517E00D55155 /* Products */;
 			projectDirPath = "";
@@ -322,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2F4FE02ABE517F00D55155 /* Preview Assets.xcassets in Resources */,
+				4F052C2E2AC00537004B2834 /* model.usdz in Resources */,
 				4F2F4FDD2ABE517F00D55155 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,10 +410,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F052C302AC005A1004B2834 /* Detail3DView.swift in Sources */,
 				4F2F4FD92ABE517E00D55155 /* Simple3DApp.swift in Sources */,
 				4F052C132AC0012E004B2834 /* ResolverManifest.swift in Sources */,
+				4F052C3A2AC00D15004B2834 /* MyView.swift in Sources */,
 				4F052C112AC00109004B2834 /* NavManifest.swift in Sources */,
 				4F052C192AC001A6004B2834 /* RootView.swift in Sources */,
+				4F052C222AC0034E004B2834 /* User3DView.swift in Sources */,
+				4F052C382AC008E2004B2834 /* ShopGallery.swift in Sources */,
+				4F052C322AC006A0004B2834 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,6 +761,62 @@
 				kind = branch;
 			};
 		};
+		4F052C1E2AC00326004B2834 /* XCRemoteSwiftPackageReference "s3d-3dviewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hassanvfx/s3d-3dviewer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+		4F052C232AC00432004B2834 /* XCRemoteSwiftPackageReference "s3d-coreui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hassanvfx/s3d-coreui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+		4F052C262AC0043D004B2834 /* XCRemoteSwiftPackageReference "s3d-coremodels" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hassanvfx/s3d-coremodels";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+		4F052C292AC004E7004B2834 /* XCRemoteSwiftPackageReference "ios-coreui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hassanvfx/ios-coreui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		4F052C342AC008C1004B2834 /* XCRemoteSwiftPackageReference "s3d-basegallery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hassanvfx/s3d-basegallery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+		4F052C3B2AC00DE9004B2834 /* XCRemoteSwiftPackageReference "s3d-loginkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hassanvfx/s3d-loginkit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+		4F052C3E2AC00EB5004B2834 /* XCRemoteSwiftPackageReference "s3d-baseapi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hassanvfx/s3d-baseapi";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -705,6 +829,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F052C152AC00191004B2834 /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
+		};
+		4F052C1F2AC00326004B2834 /* S3D3DViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F052C1E2AC00326004B2834 /* XCRemoteSwiftPackageReference "s3d-3dviewer" */;
+			productName = S3D3DViewer;
+		};
+		4F052C242AC00432004B2834 /* S3DCoreUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F052C232AC00432004B2834 /* XCRemoteSwiftPackageReference "s3d-coreui" */;
+			productName = S3DCoreUI;
+		};
+		4F052C272AC0043E004B2834 /* S3DCoreModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F052C262AC0043D004B2834 /* XCRemoteSwiftPackageReference "s3d-coremodels" */;
+			productName = S3DCoreModels;
+		};
+		4F052C2A2AC004E7004B2834 /* CoreUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F052C292AC004E7004B2834 /* XCRemoteSwiftPackageReference "ios-coreui" */;
+			productName = CoreUIKit;
+		};
+		4F052C352AC008C1004B2834 /* S3DBaseGallery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F052C342AC008C1004B2834 /* XCRemoteSwiftPackageReference "s3d-basegallery" */;
+			productName = S3DBaseGallery;
+		};
+		4F052C3C2AC00DE9004B2834 /* S3DLoginKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F052C3B2AC00DE9004B2834 /* XCRemoteSwiftPackageReference "s3d-loginkit" */;
+			productName = S3DLoginKit;
+		};
+		4F052C3F2AC00EB5004B2834 /* S3DBaseAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F052C3E2AC00EB5004B2834 /* XCRemoteSwiftPackageReference "s3d-baseapi" */;
+			productName = S3DBaseAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

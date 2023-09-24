@@ -9,10 +9,14 @@ import NavigatorLib
 import SwiftUI
 import UIKit
 
+typealias AppNavigator = Navigator<DemoTabs>
+typealias AppTabView = TabNavViewController<DemoTabs>.DisplayView
+typealias AppTabbarView = NavigatorTabBarView<DemoTabs>
+
 enum DemoTabs: Int, NavigatorTabItem {
     case home,
          store,
-         dubble
+         me
 
     var image: UIImage {
         UIImage(named: "circle")!
@@ -36,7 +40,7 @@ enum DemoTabs: Int, NavigatorTabItem {
             return "Home"
         case .store:
             return "Store"
-        case .dubble:
+        case .me:
             return "Me"
         }
     }
@@ -44,11 +48,11 @@ enum DemoTabs: Int, NavigatorTabItem {
     func navFactory(tabController: TabNavViewController<DemoTabs>) -> () -> UINavigationController {
         switch self {
         case .home:
-            return { tabController.linkAsNavigationController(root: EmptyView()) }
+            return { tabController.linkAsNavigationController(root: User3DView()) }
         case .store:
-            return { tabController.linkAsNavigationController(root: EmptyView()) }
-        case .dubble:
-            return { tabController.linkAsNavigationController(root: Rectangle().fill(Color.blue)) }
+            return { tabController.linkAsNavigationController(root: ShopGallery()) }
+        case .me:
+            return { tabController.linkAsNavigationController(root: MyView()) }
         }
     }
 
@@ -59,14 +63,14 @@ enum DemoTabs: Int, NavigatorTabItem {
         case 1:
             return .store
         case 2:
-            return .dubble
+            return .me
         default:
             fatalError()
         }
     }
 
     static var allItems: [DemoTabs] {
-        [.home, .store, .dubble]
+        [.home, .store, .me]
     }
 
     static var defaultItem: DemoTabs {
@@ -76,7 +80,7 @@ enum DemoTabs: Int, NavigatorTabItem {
 
 public enum Sheet: String {
     case measurementsInfo,
-         dubbleEditor,
+         meEditor,
          outfitPicker,
          scenePicker,
          wallet
