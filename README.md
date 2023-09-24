@@ -1,8 +1,9 @@
 # Simple 3D Viewer
 
-![Demo](https://github.com/hassanvfx/simple3DViewer/assets/425926/67bcacec-6245-4122-a276-c35e0e1b03a6)
+https://github.com/hassanvfx/simple3DViewer/assets/425926/2735b9cf-eaba-416a-9a11-74b25a0f15b8
 
 ## Background
+
 This project is a simple iOS application that allows users to view and interact with a 3D object. The application also includes a gallery view and a mock AWS integration for user authentication.
 
 A comprehensive medium article is available here:
@@ -54,6 +55,8 @@ For the SPM modularization, we'll be using the ios-framework tandem tool:
 <img width="977" alt="mvvm-c" src="https://user-images.githubusercontent.com/425926/190287169-26eb85cf-2b11-40a6-9c9d-dfa786a059a8.png">
 
 ## Conclusion
+
+![Demo](https://github.com/hassanvfx/simple3DViewer/assets/425926/67bcacec-6245-4122-a276-c35e0e1b03a6)
 
 The Simple3D App provides a practical example of how to construct large scalable codebases using SwiftUI, Combine, and SPM Conventions. By following the principles of Dependency Injection, Modularization, SOLID, and the MVVM Architecture, you can create a more organized, maintainable, and scalable codebase for your iOS applications.
 
