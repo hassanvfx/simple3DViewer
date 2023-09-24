@@ -1,6 +1,7 @@
-# Simple 3D Viewer
+<img width="341" alt="image" src="https://github.com/hassanvfx/simple3DViewer/assets/425926/01029d1f-d7fb-4ef2-9828-b4b8f634ec7d"># Simple 3D Viewer
 
 https://github.com/hassanvfx/simple3DViewer/assets/425926/2735b9cf-eaba-416a-9a11-74b25a0f15b8
+> Play the video
 
 ## Background
 
@@ -10,6 +11,7 @@ A comprehensive medium article is available here:
 [Medium Tutorial](https://twinchat.medium.com/building-reactive-applications-with-swiftui-and-combine-a-tutorial-on-ios-app-simple3d-25d18eef7649)
 
 # Simple3D App Modularization
+![Uploading image.png…]()
 
 This repository contains the Simple3D App, a modularized iOS application built using SwiftUI, Combine, and Swift Package Manager (SPM) conventions. The app is structured into several modules, each with its own repository, to promote a more organized, maintainable, and scalable codebase.
 
