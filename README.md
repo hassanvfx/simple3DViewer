@@ -12,6 +12,7 @@ The application will follow a modular architecture using Swift Package Manager (
    - `CoreAPI`: Interfaces with the Signup API.
    - https://github.com/hassanvfx/ios-coreSampleAPI
    - `CoreStorage`: Dedicated to persisting state.
+   - https://github.com/hassanvfx/ios-storage
    - `CoreTypes`: Contains all the structs for business logic.
 
 2. **Middleware Layer**: This layer contains single-purpose components that can link the core layer but also can be composed among them in a horizontal dependency to produce more complex components. These include:
@@ -27,6 +28,66 @@ The application will follow a modular architecture using Swift Package Manager (
 In this project, we will mock the AWS integration. In a real-world scenario, it is advised to create a simple backend that acts as a single entry point rather than going to AWS from the client. This is to ensure the source of truth sync. The backend can provide two endpoints for signing with a phone number, one for requesting a 2FA code for a given phone number and another that validates the pair of 2FA code and phone number. After validation, the backend can determine if there is a user account with that given phone number and retrieve or else create a new user record and finally formulate the JWT token signing the specific userId.
 
 *Note: In this project, we won't mock the AWS integration but rather simulate that there is a backend side API for auth.*
+
+## 3D Viewer Implementation with SceneKit and SwiftUI
+
+For the 3D viewer functionality, we will be using SceneKit, a powerful native framework in iOS for rendering 3D graphics. SceneKit allows us to create and manipulate 3D objects with ease. 
+
+### Basic Implementation
+
+The basic implementation of a 3D viewer using SceneKit within SwiftUI involves the following steps:
+
+1. **Create a SceneView**: SceneView is a SwiftUI view that hosts a SceneKit scene. We will create a SceneView and configure it to display our 3D object.
+
+```swift
+import SwiftUI
+import SceneKit
+
+struct SceneView: UIViewRepresentable {
+    let scene: SCNScene
+
+    func makeUIView(context: Context) -> SCNView {
+        let view = SCNView()
+        view.scene = scene
+        view.allowsCameraControl = true
+        return view
+    }
+
+    func updateUIView(_ uiView: SCNView, context: Context) {}
+}
+```
+
+2. **Load the 3D Object**: We will load the 3D object from a local USDZ file into an SCNScene object. This object will be passed to our SceneView. We will handle the potential error using a do-catch block.
+
+```swift
+do {
+    let scene = try SCNScene(url: Bundle.main.url(forResource: "YourModel", withExtension: "usdz")!, options: nil)
+    let sceneView = SceneView(scene: scene)
+} catch {
+    print("Failed to load the 3D model.")
+}
+```
+
+3. **Display the SceneView**: Finally, we will display the SceneView within our SwiftUI view hierarchy. We will handle the potential error using a do-catch block.
+
+```swift
+struct ContentView: View {
+    var body: some View {
+        do {
+            let scene = try SCNScene(url: Bundle.main.url(forResource: "YourModel", withExtension: "usdz")!, options: nil)
+            SceneView(scene: scene)
+        } catch {
+            Text("Failed to load the 3D model.")
+        }
+    }
+}
+```
+
+This basic implementation allows us to display a 3D object and manipulate it using touch gestures. However, for a more advanced 3D viewer, we may need to add additional features such as lighting, animations, and physics.
+
+## Asset Management
+
+In this simple implementation, the 3D asset is stored locally within the app. However, in a production environment, we may need to download 3D assets from S3 buckets or other cloud storage solutions. Therefore, a more advanced implementation would involve creating a download/caching manager for handling the downloading and caching of 3D assets.
 
 # Implementation
 
