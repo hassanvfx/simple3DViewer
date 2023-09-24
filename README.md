@@ -3,6 +3,9 @@
 ## Background
 This project is a simple iOS application that allows users to view and interact with a 3D object. The application also includes a gallery view and a mock AWS integration for user authentication.
 
+A comprehensive medium article is available here:
+[Medium Tutorial](https://twinchat.medium.com/building-reactive-applications-with-swiftui-and-combine-a-tutorial-on-ios-app-simple3d-25d18eef7649)
+
 ## Architecture
 The application will follow a modular architecture using Swift Package Manager (SPM), with the Model-View-ViewModel (MVVM) design pattern, Dependency Injection (DI), Test-Driven Development (TDD), and clean declarative code.
 
