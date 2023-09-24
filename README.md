@@ -1,4 +1,4 @@
-# Personal 3D Object Viewer
+# Simple 3D Viewer
 
 ![Demo](https://github.com/hassanvfx/simple3DViewer/assets/425926/67bcacec-6245-4122-a276-c35e0e1b03a6)
 
