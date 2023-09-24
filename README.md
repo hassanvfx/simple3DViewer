@@ -1,6 +1,6 @@
 # Personal 3D Object Viewer
 
-![Demo](https://github.com/hassanvfx/simple3DViewer/assets/425926/37528c11-8430-419c-a73c-df534c4d4161)
+![Demo](https://github.com/hassanvfx/simple3DViewer/assets/425926/67bcacec-6245-4122-a276-c35e0e1b03a6)
 
 ## Background
 This project is a simple iOS application that allows users to view and interact with a 3D object. The application also includes a gallery view and a mock AWS integration for user authentication.
