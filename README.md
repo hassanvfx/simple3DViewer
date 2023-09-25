@@ -1,6 +1,6 @@
 # Simple 3D Viewer
 
-https://github.com/hassanvfx/simple3DViewer/assets/425926/2735b9cf-eaba-416a-9a11-74b25a0f15b8
+https://github.com/hassanvfx/simple3DViewer/assets/425926/2cf46f36-cbc8-49a2-a737-c93965f18283
 > Play the video
 
 ## Background
@@ -9,6 +9,15 @@ This project is a simple iOS application that allows users to view and interact 
 
 A comprehensive medium article is available here:
 [Medium Tutorial](https://twinchat.medium.com/building-reactive-applications-with-swiftui-and-combine-a-tutorial-on-ios-app-simple3d-25d18eef7649)
+
+# Requirements
+
+Before you start working with this project, please make sure you meet the following requirements:
+
+- **Xcode 14+**: You will need Xcode 14 or a later version to build and run this iOS application.
+- **iOS 16+**: This application is compatible with iOS 16 and later versions. Make sure you have an iOS device or simulator running iOS 16 or higher to test the app.
+
+I
 
 # Simple3D App Modularization
 <img width="1344" alt="image" src="https://github.com/hassanvfx/simple3DViewer/assets/425926/251b8d79-c2dd-49d5-a597-59e8d5db7deb">
